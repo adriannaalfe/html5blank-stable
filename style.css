@@ -1,0 +1,736 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	color: white;
+	font-size: 14pt;
+	background-color: #825b44;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+/*a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}*/
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+/*.wrapper {
+	max-width:1280px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}*/
+
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 1280px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+
+
+/* header */
+.header {
+
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+/*@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}*/
+
+@font-face {
+	font-family:'roboto condensed';
+	src:url('fonts/RobotoCondensed-Regular.ttf') format('truetype'),
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');*/
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+.contact-form input[type=email], .contact-form input[type=text], .contact-form input[type=url] {
+	float: left;
+	width: 360px !important;
+	height: 50px;
+}
+
+.contact-form label {
+	float: left !important;
+	line-height: 50px;
+}
+
+label.grunion-field-label.textarea {
+	display: none;
+}
+
+label.grunion-field-label.email {
+	padding-left: 50px;
+}
+
+p {
+	text-transform: none !important;
+}
+
+/*------------------------------------*\
+    WOOCOMMERCE
+\*------------------------------------*/
+
+.woocommerce .logo-img {
+	height: 110px;
+}
+
+
+.woocommerce div.product div.images img {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 100px;
+}
+
+.woocommerce h1 {
+	margin-left: 50%;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	background-color: #10a296;
+	color: white;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+	color: #10a296;
+}
+
+.woocommerce ul.products li.product a img {
+	width: 50%;
+	height: auto;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	background-color: #10a296;
+	color: white;
+}
+
+.woocommerce div.product p.price {
+	color: white;
+}
+.woocommerce .quantity .qty{
+	height: 41px;
+}
+.woocommerce ul.products li.product .price {
+	width: 20%;
+	color: white;
+	float: left;
+	line-height: 2.5;
+}
+
+.woocommerce ul.products li.product .button {
+	margin-top: 0;
+}
+
+button, input, select, textarea {
+	border-color: #422615;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	border: none;
+	background-color: #10a296;
+	color: white;
+}
+
+/*.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+	margin-left: 50%;
+}
+
+.woocommerce ul.products li.product .price {
+	margin-left: 50%;
+}*/
+
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
+
+
+
+
+
+.header {
+	height: 125px;
+	background-color: black;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 24pt;
+	margin: 0;
+}
+.hero {
+	width: 100%;
+	height: auto;
+}
+.logo-img {
+	padding-left: 25px;
+	padding-top: 15px;
+	float: left;
+	height: 110px;
+	width: auto;
+}
+.logo:hover {
+	opacity: .75;
+	transition: .2s;
+}
+.nav {
+	color: white;
+	float: right;
+	padding-right: 50px;
+	padding-top: 10px;
+	word-spacing: 200px;
+}
+ul {
+	list-style-type: none;
+}
+li {
+    display: inline;
+    font-family:'roboto condensed', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	opacity: .75;
+}
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+	background-color: black;
+  /*padding: 5px;*/
+  width: 200px;
+  height: 200px;
+  /*margin-top: 10px;*/
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.flex-img {
+	height: 100%;
+	width: 100%;
+}
+
+
+.product {
+	background-color: #825b44;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.prod-img-container {
+	/*width: 70%;*/
+	/*float: left;*/
+	/*text-align: center; */
+}
+.prod-img {
+	margin-left: 30%;
+	height: 500px;
+	width: 500px;
+	/*text-align: center;*/
+}
+
+.prod-txt {
+	color: white;
+	/*width: 30%;*/
+	text-align: center;
+	/*float: right;*/
+	padding-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-family: 'roboto condensed', sans-serif;
+}
+.prod-txt h1{
+	font-size: 36pt;
+}
+.prod-txt p{
+	font-size: 14pt;
+}
+
+button{
+	background-color: #10A296;
+	border: none;
+	color: white;
+	padding: 12px 20px;
+	font-size: 18pt;
+	font-family: 'roboto condensed', sans-serif;
+	/*margin-left: 50%;
+	margin-right: 50%;*/
+}
+
+.flex-container2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item2 {
+  /*padding: 5px;*/
+  width: 400px;
+  height: 200px;
+  /*margin-top: 10px;*/
+  
+  /*line-height: 150px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 36pt;
+  text-align: center;
+  font-family: 'roboto condensed', sans-serif;
+}
+.flex-item2 p {
+	font-size: 14pt;
+	font-weight: normal;
+}
+.flex-item2:hover {
+	opacity: .75;
+}
+
+.blogpost {
+	font-family: 'roboto condensed', sans-serif;
+	color: white;
+	padding-left: 200px;
+	padding-right: 200px;
+
+}
+.blogpost h1 {
+	font-size: 24pt;
+	padding-bottom: 20px;
+}
+
+.footer {
+	height: 200px;
+	padding-right: 25px;
+	background-color: black;
+	color: white;
+	font-family: 'roboto condensed', sans-serif;
+	text-align: right;
+}
+.about {
+	padding-right: 100px;
+}
+.follow {
+	float: right;
+}
+
+
+.footer-distributed{
+	background-color: black;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: right;
+	font-family: 'roboto condensed', sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* left space */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+
+
+/* center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: white;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;
+}
+
+
+
+/* right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+
+
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	color: white;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-right p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-right p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+	.nav {
+	font-size: 14pt;
+	padding-right: 10px;
+	padding-top: 5%;
+	word-spacing: 10px;
+}
+
+}
+
